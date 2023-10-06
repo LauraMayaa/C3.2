@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent {
+  public isHighlight: boolean = false
+  public isShowingMovies: boolean = true
 
+  public highlight() {
+    this.isHighlight = !this.isHighlight
+  }
+
+  public showMovies() {
+    this.isShowingMovies = !this.isShowingMovies
+  }
 }
