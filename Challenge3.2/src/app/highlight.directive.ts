@@ -8,7 +8,7 @@ export class HighlightDirective implements OnInit {
   @HostBinding('class.firstElement') highlight: boolean;
 
   constructor() {
-    this.highlight = true
+    this.highlight = false
   }
 
   ngOnInit(): void {
